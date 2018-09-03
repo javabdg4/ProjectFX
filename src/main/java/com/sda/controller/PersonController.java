@@ -47,7 +47,6 @@ public class PersonController {
     }
 
     public void viewPersonInfoOnLabel(Person person) {
-        System.out.println(person.getName());
         nameLabel.setText(person.getName());
         lastnameLabel.setText(person.getLastname());
         streetLabel.setText(person.getStreet());

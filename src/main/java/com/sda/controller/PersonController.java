@@ -8,6 +8,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class PersonController {
+
+    @FXML
     private TableView<Person> personTableView;
 
     @FXML
@@ -31,5 +33,14 @@ public class PersonController {
 
     public void setPersonView(PersonView personView) {
         this.personView = personView;
+        personTableView.setItems(personView.getPersonList());
+    }
+
+    @FXML
+    public void initialize() {
+        System.out.println("TEST");
+
+        nameCol.setCellValueFactory(cell -> cell.getValue().nameProperty());
+        lastname.setCellValueFactory(cell -> cell.getValue().lastnameProperty());
     }
 }

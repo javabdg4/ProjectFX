@@ -42,5 +42,17 @@ public class PersonController {
 
         nameCol.setCellValueFactory(cell -> cell.getValue().nameProperty());
         lastname.setCellValueFactory(cell -> cell.getValue().lastnameProperty());
+        personTableView.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldField, newField) -> viewPersonInfoOnLabel(newField));
+    }
+
+    public void viewPersonInfoOnLabel(Person person) {
+        System.out.println(person.getName());
+        nameLabel.setText(person.getName());
+        lastnameLabel.setText(person.getLastname());
+        streetLabel.setText(person.getStreet());
+        cityLabel.setText(person.getCity());
+        postalcodeLabel.setText(person.getPostalCode());
+        telephoneLabel.setText(person.getTelephone());
     }
 }

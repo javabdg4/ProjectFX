@@ -106,10 +106,10 @@
                               <Label fx:id="telephoneLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                            </children>
                         </GridPane>
-                        <Button layoutX="14.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="New" textAlignment="CENTER" />
-                        <Button layoutX="90.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Edit" textAlignment="CENTER" />
-                        <Button layoutX="250.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Save" textAlignment="CENTER" />
-                        <Button layoutX="169.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Delete" textAlignment="CENTER" />
+                        <Button onAction="#handleNewButton" layoutX="14.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="New" textAlignment="CENTER" />
+                        <Button onAction="#handleEditButton" layoutX="90.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Edit" textAlignment="CENTER" />
+                        <Button onAction="#handleSaveButton" layoutX="250.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Save" textAlignment="CENTER" />
+                        <Button onAction="#handleDeleteButton" layoutX="169.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Delete" textAlignment="CENTER" />
                      </children>
                   </AnchorPane>
               </items>

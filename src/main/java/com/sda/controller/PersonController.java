@@ -2,6 +2,7 @@ package com.sda.controller;
 
 import com.sda.model.Person;
 import com.sda.view.PersonView;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -53,5 +54,21 @@ public class PersonController {
         cityLabel.setText(person.getCity());
         postalcodeLabel.setText(person.getPostalCode());
         telephoneLabel.setText(person.getTelephone());
+    }
+
+    public void handleNewButton(ActionEvent actionEvent) {
+        personView.loadNewPersonView();
+    }
+
+    public void handleEditButton(ActionEvent actionEvent) {
+        System.out.println("Edit");
+    }
+
+    public void handleSaveButton(ActionEvent actionEvent) {
+        System.out.println();
+    }
+
+    public void handleDeleteButton(ActionEvent actionEvent) {
+        System.out.println("Delete");
     }
 }
